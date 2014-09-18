@@ -1,0 +1,1 @@
+var b = require('bonescript');var led = "P8_10";b.pinMode(led, b.OUTPUT);setInterval(check,500);function check(){b.analogRead('P9_40', checkKnock);}function checkKnock(x) {    console.log (x.value);    if (x.value <0.50) {        b.digitalWrite(led, b.HIGH);    }    else        b.digitalWrite(led, b.LOW);  }

@@ -1,0 +1,1 @@
+var b = require('bonescript');var inputPin = "P9_40";getBeagleTemp();function getBeagleTemp() {    var value = b.analogRead(inputPin);    var millivolts = value * 1800;    var temp_c = (millivolts - 500) / 10;    setTimeout(getBeagleTemp, 1000);    console.log(temp_c);}

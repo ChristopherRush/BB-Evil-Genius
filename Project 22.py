@@ -1,0 +1,1 @@
+import timeimport string2text as str2matapp_text = str2mat.Text2LED()app_ticker = str2mat.LED_TICKER()message = time.strftime('%c')while True:        app_ticker.ticker = app_text.add_to_ticker(message + " ")app_ticker.main()

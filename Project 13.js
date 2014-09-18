@@ -1,0 +1,1 @@
+var b = require('bonescript');var inputPin = "P9_40";getlightlevel();function getlightlevel() {    var value = b.analogRead(inputPin);    setTimeout(getlightlevel, 1000);    console.log(value);}
